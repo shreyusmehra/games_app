@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+:root{
+  ---clr-white:#fff;
+  ---clr-black:#000;
+  ---clr-grey:hsl(211, 27%, 70%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchfield-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchfield{
+  text-decoration: none;
+  margin: 0px 20px 0px 0px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 0px 10px 10px 0px;
+  border: 0px solid var(---clr-white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchfield:focus{
+  border: 0px solid var(---clr-white);
+}
+
+.searchform-container{
+  margin: 20px 0px 20px 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.searchform{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-container{
+  margin: 20px 0px 0px 0px;
+}
+
+.gamecards-title-container{
+  border-top: 2px solid var(---clr-black);
+  border-bottom: 2px solid var(---clr-black);
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(---clr-white);
+}
+
+.gamecard-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gamecard{
+  border: 1px solid var(---clr-black);
+  width: 30%;
+  border-radius: 5px;
+  margin: 20px 10px 20px 10px;
+  background-color: var(---clr-white);
+  cursor: pointer;
+}
+
+.gamecard:hover{
+  box-shadow: var(--dark-shadow),
+      var(--dark-shadow);
+}
+
+.filter-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid var(---clr-black);
+  padding: 10px 0px 0px 0px;
+}
+
+.footer-container{
+  background-color: var(---clr-grey);
+  margin: 50px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
+  font-style: italic;
+  text-align: center;
 }
